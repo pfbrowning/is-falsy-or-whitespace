@@ -1,0 +1,24 @@
+{
+  "name": "is-falsy-or-whitespace",
+  "version": "0.0.1",
+  "description": "A simple javascript function to determine whether a string is semantically empty, inspired by string.isNullIOrWhitespace in the .NET stack",
+  "main": "dist/index.js",
+  "types" : "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfbrowning/is-falsy-or-whitespace.git"
+  },
+  "author": "Patrick Browning",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pfbrowning/is-falsy-or-whitespace/issues"
+  },
+  "homepage": "https://github.com/pfbrowning/is-falsy-or-whitespace#readme",
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}
