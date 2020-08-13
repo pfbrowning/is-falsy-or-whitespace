@@ -1,15 +1,17 @@
 {
   "name": "is-falsy-or-whitespace",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A simple javascript function to determine whether a string is semantically empty, inspired by string.isNullIOrWhitespace in the .NET stack",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -cw",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ts-node --project=\"tsconfig.spec.json\" node_modules/jasmine/bin/jasmine --config=\"spec/support/jasmine.json\""
   },
   "repository": {
     "type": "git",
@@ -22,8 +24,11 @@
   },
   "homepage": "https://github.com/pfbrowning/is-falsy-or-whitespace#readme",
   "devDependencies": {
+    "@types/jasmine": "^3.5.12",
+    "jasmine": "^3.6.1",
     "rollup": "^2.23.1",
     "rollup-plugin-typescript2": "^0.27.2",
+    "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   }
 }
