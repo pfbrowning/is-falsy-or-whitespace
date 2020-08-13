@@ -13,7 +13,10 @@
     "watch": "rollup -cw",
     "test": "ts-node --project=\"tsconfig.spec.json\" node_modules/jasmine/bin/jasmine --config=\"spec/support/jasmine.json\"",
     "lint": "standardx --parser @typescript-eslint/parser --plugin @typescript-eslint/eslint-plugin **/*.ts --global describe --global it --global expect",
-    "lint-fix": "standardx --parser @typescript-eslint/parser --plugin @typescript-eslint/eslint-plugin **/*.ts --global describe --global it --global expect --fix"
+    "lint-fix": "standardx --parser @typescript-eslint/parser --plugin @typescript-eslint/eslint-plugin **/*.ts --global describe --global it --global expect --fix",
+    "test:coverage": "nyc --reporter=lcov --exclude=spec npm run test",
+    "test:coveralls": "node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info",
+    "test:generate-publish-coverage": "npm run test:coverage && npm run test:coveralls"
   },
   "repository": {
     "type": "git",
@@ -29,7 +32,9 @@
     "@types/jasmine": "^3.5.12",
     "@typescript-eslint/eslint-plugin": "^3.9.0",
     "@typescript-eslint/parser": "^3.9.0",
+    "coveralls": "^3.1.0",
     "jasmine": "^3.6.1",
+    "nyc": "^15.1.0",
     "rollup": "^2.23.1",
     "rollup-plugin-typescript2": "^0.27.2",
     "standardx": "^5.0.0",
