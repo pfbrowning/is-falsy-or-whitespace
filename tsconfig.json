@@ -1,9 +1,14 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "es2015",
+    "module": "es6",
     "declaration": true,
+    "declarationDir": "./dist",
     "outDir": "./dist",
-    "strict": true
-  }
+    "strict": true,
+  },
+  "include": [
+    "lib/**/*"
+  ],
+  "exclude": ["node_modules"]
 }
