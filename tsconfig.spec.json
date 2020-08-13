@@ -3,5 +3,8 @@
     "compilerOptions": {
       "module": "CommonJS",
     },
+    "include": [
+      "spec/**/*"
+    ],
   }
   
