@@ -10,11 +10,13 @@ describe('isFalsyOrWhitespace', () => {
     { value: 0, expected: true },
     { value: NaN, expected: true },
     { value: false, expected: true },
-    { value: [], expected: false },
     { value: 'undefined', expected: false },
     { value: 'null', expected: false },
     { value: 'some non blank string', expected: false },
-    { value: '          a                ', expected: false }
+    { value: '          a                ', expected: false },
+    { value: [], expected: false },
+    { value: {}, expected: false },
+    { value: 1, expected: false },
   ]
   testCases.forEach(input => {
     it(`should determine ${input.value} ${input.expected ? 'not' : ''} to be falsy or whitespace`, () => {
