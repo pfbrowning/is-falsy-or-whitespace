@@ -13,7 +13,7 @@ import isFalsyOrWhitespace from 'is-falsy-or-whitespace';
 ```
 CommonJS Require
 ```js
-
+const isFalsyOrWhitespace = require('is-falsy-or-whitespace').default;
 ```
 
 ## Results
