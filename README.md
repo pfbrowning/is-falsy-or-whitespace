@@ -6,12 +6,14 @@
 ## Introduction
 `is-falsy-or-whitespace` is a simple function whose purpose is to determine whether a string is semantically empty.  It's inspired by `string.isNullOrWhitespace` in the .NET stack.  It's packaged as an ES2015 module with Typescript types included.
 
-## Usage
+## Imports
+ES / Typescript Import
 ```ts
 import isFalsyOrWhitespace from 'is-falsy-or-whitespace';
+```
+CommonJS Require
+```js
 
-const stringValue = '     ';
-const result = isFalsyOrWhitespace(stringValue); // Returns true
 ```
 
 ## Results
