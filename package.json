@@ -1,6 +1,6 @@
 {
   "name": "is-falsy-or-whitespace",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A simple javascript function to determine whether a string is semantically empty, inspired by string.isNullIOrWhitespace in the .NET stack",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
